@@ -1,0 +1,8 @@
+
+.header-component{
+    width: 100%;
+    max-width: 800px;
+    background: deepskyblue;
+    color: black;
+    min-height: 50px;
+}
