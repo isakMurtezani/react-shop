@@ -1,0 +1,8 @@
+
+.bg-header{
+    /*background: url("/src/assets/vite.svg");*/
+    background: url("/src/assets/tim-arterbury-hoT_2bL5LxU-unsplash.jpg");
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+}

@@ -1,0 +1,11 @@
+
+{
+  "products": [{
+    "id": 1,
+    "productImage": "/src/assets/polina-kuzovkova-gBRldmTpDhM-unsplash.jpg",
+    "gallery": [{
+      "imageURL": "someurl",
+      "alt": "page"
+    }]
+  }]
+}

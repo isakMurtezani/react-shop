@@ -6,6 +6,7 @@ import { Product } from './components/Product/Product.jsx'
 import { SingleProduct } from './components/Product/SingleProduct.jsx'
 import { Home } from './components/Home/Home.jsx'
 import { ProductList } from './components/Product/ProductList.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
