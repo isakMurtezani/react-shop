@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
 function DetailedProductView(){
@@ -21,6 +21,10 @@ function DetailedProductView(){
 
   return (
     <div>
+      <img src={product.thumbnail} alt={product.title + " image"}
+           height={500}
+           style={{padding: 20}}
+      />
       <h2>{product.title}</h2>
       <p>{product.description}</p>
     </div>
