@@ -7,6 +7,7 @@ import { SingleProduct } from './components/Product/SingleProduct.jsx'
 import { Home } from './components/Home/Home.jsx'
 import { ProductList } from './components/Product/ProductList.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { DetailedProductView } from './components/Product/DetailedProductView.jsx'
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <Route path='/about' element={<Page />} />
             <Route path='/product' element={<Outlet />} >
               <Route index element={<ProductList />} />
-              <Route path='/product/:id' element={<SingleProduct />} />
+              <Route path='/product/:id' element={<DetailedProductView />} />
             </Route>
 
           </Route>
