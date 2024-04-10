@@ -1,8 +1,210 @@
-
-.bg-header{
-    /*background: url("/src/assets/vite.svg");*/
-    background: url("/src/assets/tim-arterbury-hoT_2bL5LxU-unsplash.jpg");
-    width: 100px;
-    height: 100px;
-    background-size: 100px;
+*{
+    scroll-behavior: smooth
 }
+body {margin: 0;}
+
+
+.auto-height-iframe{
+    border: none;
+    width: 100%;
+    margin: 0;
+    
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 105;
+    height: 6.25rem;
+    
+}
+
+.headline{
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    
+    
+}
+.shop-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13em;
+    height: 3em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(243, 134, 115);
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+.video-container {
+    z-index: 100;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+figcaption:hover{
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+img , figcaption{
+    cursor: pointer;
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h2-section{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 1.875rem;
+    font-family: 'Playfair Display';
+}
+
+
+
+.tabs{
+    width: 100%;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif; 
+}
+.tabs p:hover{
+    cursor: pointer;
+}
+.image-grid{
+    display: inline-flex;
+    height: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    overflow: visible;
+    margin: 30px;
+}
+.image-grid img:hover{
+    transform: scale(0.9);
+    transition: 100ms ease-in-out;
+    opacity: 0.7;
+
+}
+
+figcaption{
+    width: 480px;
+    text-align: center;
+    font-family: 'Playfair Display';
+}
+/* .image-grid div{
+    
+} */
+.image-grid div span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    color: rgb(99, 98, 98) ;
+    cursor: s;
+
+}
+.article-container{
+    width: 100%;
+    height: 43.75rem;
+    background-color: #f2f1f0 ; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.article {
+    width: 50%;
+    }
+.left {
+    text-align: left !important;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+  #parag{
+    font-size: 1.875rem;
+    font-family: 'Playfair Display';
+  }
+
+.right{
+    margin: 0;
+    padding: 0;
+    float: right;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    justify-content: flex-end;
+
+}
+
+/* 
+#scrollToTopBtn {
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color:black; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    } */
+/* #scrollToTopBtn a{
+    text-decoration: none;
+    color: white;
+    }
+    
+#scrollToTopBtn:hover {
+    background-color: #555; 
+    }
+    .shop-button2{
+    text-align: center;
+    
+    width: 10.813rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(243, 134, 115);
+    color: white;
+    letter-spacing: 1px;
+    } */
+
+
+
+/*rgb(99, 98, 98) siva boja za cijene
+//perhaps a kalash may come, to be decided..

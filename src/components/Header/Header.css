@@ -1,8 +1,154 @@
+html * {
+  margin: 0;
+}
+body {
+  margin: 0 auto;
+}
 
-.header-component{
+object {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-right: 50px;
+  background-color: white;
+  height: 8.125rem;
+}
+
+.left {
+  min-width: 33%;
+  justify-content: space-around;
+  font-size: 1rem;
+  color: black;
+  font-family: sans-serif;
+}
+
+.left div {
+  display: inline-flex;
+  padding: 1.875rem;
+  margin: 0.625rem;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.left div a {
+  font-size: 17px;
+}
+
+.left div::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: transparent;
+  transition:
+    width 0.3s ease-in-out,
+    left 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.left div:hover::after {
+  width: 100%;
+  right: 0;
+  background-color: black;
+}
+
+.center {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 110px;
+}
+.right {
+  min-width: 33% !important;
+  width: 10em !important;
+  display: inline-flex !important;
+  justify-content: space-around !important;
+  height: 110px !important;
+  align-items: center !important;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+form {
+  display: inline-flex;
+}
+
+form input {
+  border: none;
+  outline: none;
+  background-color: lightgray;
+}
+
+button {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .big-screen {
+    flex-direction: column;
+    height: auto;
+    padding: 0 !important;
+  }
+
+  .header {
+    flex-direction: column;
     width: 100%;
-    max-width: 800px;
-    background: deepskyblue;
-    color: black;
-    min-height: 50px;
+  }
+
+  .header.left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .header.center,
+  .header.right {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .header.left div {
+    padding: 10px 5px;
+  }
+
+  .header.right {
+    margin-top: 10px;
+  }
+
+  .header.right a {
+    margin-left: 10px;
+  }
+
+  .logo {
+    margin: 10px 0;
+  }
+
+  .fa-bars {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 2.2rem;
+  }
 }

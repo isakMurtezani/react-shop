@@ -1,9 +1,5 @@
-
-function Page() {
-
-  const title = "Some title";
-  const description = "Some description";
-
+/* eslint-disable react/prop-types */
+function Page(props) {
   // const title = fakeProps.title;
   // const description = fakeProps.desctiption;
 
@@ -12,11 +8,11 @@ function Page() {
 
   return (
     <>
-      <div id={"sidebar"}>{title}</div>
-      <p>{description}</p>
+      <div id={'sidebar'}>{props.title}</div>
+      <p>{}</p>
       {/*<h2>This is a page component</h2>*/}
     </>
-  )
+  );
 }
 
-export { Page }
+export { Page };

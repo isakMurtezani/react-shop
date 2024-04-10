@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Dynasty Cream",
+      "description": "Meet the Dynasty Cream, our very first product here at Beauty of Joseon, and a long-time favorite of many of our customers. Its firm and creamy texture gives your skin deep, long-lasting moisture and nourishment. This all-in-one cream is filled with good-for-skin ingredients like rice bran water, ginseng water, squalane, and niacinamide. These ingredients help to keep your skin healthy, hydrated, and balanced. Its firm texture sinks into your skin, providing moisture and nourishment from deep within.",
+      "price": 24,
+      "category": "cream",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1710864972/dynasty-cream_lokpwd.webp"
+    },
+    {
+      "id": 2,
+      "name": "Revive Serum : Ginseng + Snail Mucin",
+      "description": "This serum is made for skin that has lost its vitality.It contains 'ginseng', which has been used as an important herbal ingredient for a long time, and 3% 'snail secretion filtrate', which creates the best synergy for skin elasticity.",
+      "price": 18,
+      "category": "serum",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1710864946/revive-serum_zncbpu.webp"
+    },
+    {
+      "id": 3,
+      "name": "Glow Serum : Propolis + Niacinamide",
+      "description": "This serum is made for those struggling with enlarged pores and skin inflammation. With a blend of 60% propolis extract and 2% niacinamide, it skillfully manages sebum production while ensuring your skin remains hydrated.",
+      "price": 17,
+      "category": "serum",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1710864972/glow-serum_wsd3k2.webp"
+    },
+    {
+      "id": 4,
+      "name": "Ginseng Essence Water",
+      "description": "Ginseng has been a cherished herb in Korean history, renowned for its benefits to our overall health and particularly our skin. Our Ginseng Essence Water, made with 80% ginseng water, harnesses the natural power of ginseng, nourishing and hydrating the skin deeply. This essence not only supplies your skin with ample moisture and nutrients but also ensures long-lasting hydration.",
+      "price": 17,
+      "category": "toner",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1710864972/ginseng-water_mclk3z.webp"
+    },
+    {
+      "id": 5,
+      "name": "Relief Sun : Rice + Probiotics (SPF50+ PA++++)",
+      "description": "Relief Sun is a lightweight and creamy type organic sunscreen that's comfortable on skin. Even if you apply a large amount several times, it is not sticky and gives a moist finish like that of a light moisturizing cream. Containing 30% rice extract and grain fermented extracts, it provides moisture and nourishment to the skin.",
+      "price": 18,
+      "category": "sunscreen",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1710864946/relief-sun_h1gutf.webp"
+    },
+    {
+      "id": 6,
+      "name": "Green Plum Refreshing Cleanser",
+      "description": "Choosing a cleanser involves finding a balance between thorough cleansing and maintaining the skin's barrier health. Our Green Plum Refreshing Cleanser, with its gentle, slightly acidic formulation, harnesses the power of plant-derived extracts from plum and mung bean seeds to achieve just that.",
+      "price": 13,
+      "category": "cleanser",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1710864963/green-plum-cleanser_tbuykv.webp"
+    },
+    {
+      "id": 7,
+      "name": "Red Bean Refreshing Pore Mask",
+      "description": "Our pores are essentially pathways that sebum uses to reach the surface of our skin. When dead skin cells and surplus sebum clog these pathways, pores tend to enlarge. Proper pore care involves clearing away the built-up dead skin cells and sebum, followed by cooling the skin.",
+      "price": 19,
+      "category": "exfoliator",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1710864946/red-bean-mask_jyy83i.webp"
+    },
+    {
+      "id": 8,
+      "name": "Radiance Cleansing Balm",
+      "description": "It is a balm-type cleansing oil that gently melts eye, lip, base makeup and sebum. It contains rice bran and various grain extracts, so the skin does not get dry and remains moist.",
+      "price": 15,
+      "category": "cleanser",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1710864946/radiance-cleansing-balm_pba99a.webp"
+    },
+    {
+      "id": 9,
+      "name": "Matte Sun Stick : Mugwort+Camelia (SPF 50+ PA++++)",
+      "description": "Our sun stick utilizes a sebum-control silica powder to regulate oil production, ensuring an adherence boost and a smooth, matte finish. Plus, it's packed with artemisia capillaris and green tea extracts, contributing to a smooth skin texture while preserving its hydration.",
+      "price": 19,
+      "category": "sunscreen",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1711029132/Matte-Sun-Stick_azodrp.webp"
+    },
+    {
+      "id": 10,
+      "name": "Ginseng Cleansing Oil",
+      "description": "At Beauty of Joseon, we value cleansing as the most important step in skincare. If neglected, skin impurities and sebum can build up in your pores, potentially causing skin inflammation. Our cleansing oil gently emulsifies and removes these impurities, ensuring a clean and refreshed complexion.",
+      "price": 20,
+      "category": "cleanser",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1711029146/GinsengCleansingOil_hgih1s.webp"
+    },
+    {
+      "id": 11,
+      "name": "Green Plum Refreshing Toner : AHA + BHA",
+      "description": "At the heart of our toner is the power of plum, a long-standing herbal remedy, now harnessed for its cosmetic benefits in skin texture care and dead cell removal. Working in harmony with mung bean extract—a skin-soothing powerhouse—and the chemical exfoliants AHA and BHA, this toner is all set to revitalize your skin's natural glow.",
+      "price": 19,
+      "category": "toner",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1711029140/GreenPlumRefreshingToner_ne7onm.webp"
+    },
+    {
+      "id": 12,
+      "name": "Red Bean Water Gel",
+      "description": "As skin matures, it tends to lose moisture and oil, leading to easier wrinkle formation. When the skin lacks sufficient moisture, it compensates by producing more sebum for protection. This imbalance can increase the risk of skin inflammation. Hence, maintaining the skin's oil-water balance is crucial for its health.",
+      "price": 18,
+      "category": "moisturizer",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1711029128/Red-bean-waater-gel_uqdj7y.webp"
+    },
+    {
+      "id": 13,
+      "name": "Calming Serum : Green tea + Panthenol",
+      "description": "This serum is formulated to alleviate skin discomfort caused by UV exposure and other external stressors. Our chosen base ingredients are green tea, a renowned antioxidant, and mugwort, a herb acclaimed for its skin-soothing properties. We've incorporated panthenol to complement and enhance the protective qualities of these elements. Together, green tea and mugwort hydrate and calm the skin, while panthenol creates a moisture shield, preventing further irritation.",
+      "price": 18,
+      "category": "serum",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1711029148/Calming-Serum_q5pl2n.webp"
+    },
+    {
+      "id": 14,
+      "name": "Apricot Blossom Peeling Gel",
+      "description": "This is a gommage type exfoliator, enriched with 19% Prunus Mume Flower Water and 8% plant-based Cellulose. It aims to alleviate skin concerns linked to uneven texture and excessive sebum production.",
+      "price": 20,
+      "category": "exfoliator",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1711029154/Apricot-Blossom-peeling_cmc4gs.webp"
+    },
+    {
+      "id": 15,
+      "name": "Light On Serum : Centella + Vita C",
+      "description": "It is an brightening serum that contains Centella Asiatica extract and Vitamin C as main ingredients. The disadvantages of existing pure vitamin C products in the market, such as stickiness, greasiness, and dryness, were improved. Also, the irritation level of the product was reduced as well by using highly stable vitamin C derivatives. Organic Centella asiatica extract with a high active ingredient content is used and blended together to further enhance skin soothing and moisturization.",
+      "price": 20,
+      "category": "serum",
+      "image": "https://res.cloudinary.com/dgxprxthh/image/upload/v1711029138/Light-On-serum_fi0q55.webp"
+    }
+  ]
+}
