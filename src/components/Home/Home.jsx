@@ -1,21 +1,21 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import './Home.css';
-import { ProductList } from '../Product/ProductList.jsx';
+
 import { Link } from 'react-router-dom';
 // import { Shop } from '../Shop/Shop.jsx';
 
 export const Home = () => {
-  const [productList, setProductList] = useState([]);
+  // const [productList, setProductList] = useState([]);
 
-  useEffect(() => {
-    console.log('MEOW');
-    fetch('src/assets/resources/json/products.json')
-      .then((res) => res.json())
-      .then((json) => {
-        console.log('setting Products =======> ', json.products);
-        setProductList(json.products);
-      });
-  }, []);
+  // useEffect(() => {
+  //   console.log('MEOW');
+  //   fetch('src/assets/resources/json/products.json')
+  //     .then((res) => res.json())
+  //     .then((json) => {
+  //       console.log('setting Products =======> ', json.products);
+  //       setProductList(json.products);
+  //     });
+  // }, []);
 
   return (
     <div className="home">
@@ -81,10 +81,12 @@ export const Home = () => {
         </div>
       </div>
 
-      <ProductList products={productList} />
       <button id="scrollToTopBtn" title="Go to top">
         <a href="#top">
-          <img src="../web-shop/images/arrow-up.svg" alt="blabla" />
+          <img
+            src="https://res.cloudinary.com/dgxprxthh/image/upload/v1712665154/arrow-up_ubiewi.svg"
+            alt="blabla"
+          />
         </a>
       </button>
     </div>
