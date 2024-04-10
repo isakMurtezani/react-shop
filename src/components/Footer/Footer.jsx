@@ -6,7 +6,10 @@ function Footer() {
     <div className="footer-wrapper">
       <div>
         <figure>
-          <img src="src/assets/images/joseon_big.svg" alt="Logotip" />
+          <img
+            src="https://res.cloudinary.com/dgxprxthh/image/upload/v1712764890/joseon_big_gsgusa.svg"
+            alt="Logotip"
+          />
         </figure>
 
         <div className="footer-links">

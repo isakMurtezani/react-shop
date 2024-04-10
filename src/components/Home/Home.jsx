@@ -23,7 +23,7 @@ export const Home = () => {
         <div className="video-container">
           <video autoPlay muted loop id="background-video">
             <source
-              src="src/assets/images/Beauty of Joseon - Dynasty Cream HaruTube.mp4"
+              src="https://res.cloudinary.com/dgxprxthh/video/upload/v1712764930/Beauty_of_Joseon_-_Dynasty_Cream_HaruTube_proxhv.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -68,14 +68,14 @@ export const Home = () => {
             factor into how quickly your skin ages.
           </p>
 
-          <a href="../web-shop/shop.html">
-            <button className="shop-button2">PLS BUY SMTHN</button>
-          </a>
+          <Link to="/shop">
+            <button className="shop-button">BUY PLS </button>
+          </Link>
         </div>
 
         <div className="article right">
           <img
-            src="src/assets/images/BOJ_Sun_Trio_1_700X__85949.jpg"
+            src="https://res.cloudinary.com/dgxprxthh/image/upload/v1712665222/BOJ_Sun_Trio_1_700X__85949_jbc3xd.jpg"
             alt="ablablabla"
           />
         </div>
