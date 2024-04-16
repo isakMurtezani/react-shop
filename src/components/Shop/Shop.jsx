@@ -6,14 +6,19 @@ function Shop() {
   const [productList, setProductList] = useState([]);
 
   useEffect(() => {
-    fetch('src/assets/resources/json/products.json')
-      .then((res) => res.json())
-      .then((json) => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('src/assets/resources/json/products.json');
+        const json = await response.json();
         console.log('Products ====> ', json.products);
         setProductList(json.products);
-      });
-    console.log('MOJI PROIZVODI JSON = >>>>>>>>>', productList);
-  });
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>

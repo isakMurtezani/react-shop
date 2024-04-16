@@ -57,10 +57,10 @@ export const Home = () => {
       </div>
 
       <div className="article-container">
-        <div className="article left">
-          <p id="parag">Transform your Suncare to Skincare</p>
+        <div className="article-left">
+          <p id="subtitle">Transform your Suncare to Skincare</p>
 
-          <p>
+          <p id="paragraph">
             A lot of people attribute how quickly their skin ages to their
             genetics, but it turns out that external factors play a huge role in
             skin aging. Sun exposure can account for almost 90 percefnt of
@@ -68,27 +68,23 @@ export const Home = () => {
             factor into how quickly your skin ages.
           </p>
 
-          <Link to="/shop">
-            <button className="shop-button">BUY PLS </button>
-          </Link>
+          <button className="shop-button">
+            <Link to="/shop">BUY PLS</Link>
+          </button>
         </div>
 
         <div className="article right">
           <img
+            className="article-right-img"
             src="https://res.cloudinary.com/dgxprxthh/image/upload/v1712665222/BOJ_Sun_Trio_1_700X__85949_jbc3xd.jpg"
             alt="ablablabla"
           />
         </div>
       </div>
 
-      <button id="scrollToTopBtn" title="Go to top">
-        <a href="#top">
-          <img
-            src="https://res.cloudinary.com/dgxprxthh/image/upload/v1712665154/arrow-up_ubiewi.svg"
-            alt="blabla"
-          />
-        </a>
-      </button>
+      <div className="newsletter">
+        <div className="newsletter-title">SELF CARE</div>
+      </div>
     </div>
   );
 };

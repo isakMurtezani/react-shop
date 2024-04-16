@@ -11,7 +11,7 @@ object {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  padding-right: 50px;
+
   background-color: white;
   height: 8.125rem;
 }

@@ -15,8 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<AppWrapperComponent />}>
             <Route index element={<Home />} />
-            <Route path="/contact" element={<Page title={'Contact'} />} />
             <Route path="/shop" element={<Shop title={'Shop'} />} />
+            {/* <Route path="/retail" element={<Retail title={'Retail'} />} /> */}
             <Route path="/story" element={<Page title={'Story'} />} />
             <Route path="/product" element={<Outlet />}>
               <Route index element={<ProductList />} />

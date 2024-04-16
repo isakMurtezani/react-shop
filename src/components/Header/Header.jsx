@@ -16,19 +16,13 @@ function Header() {
       <object className="big-screen">
         <div className="header left">
           <div>
-            <Link to="/shop" target="_parent">
-              SHOP
-            </Link>
+            <Link to="/shop">SHOP</Link>
           </div>
           <div>
-            <Link to="" target="_parent">
-              STORY
-            </Link>
+            <Link to="">STORY</Link>
           </div>
           <div>
-            <Link to="" target="_parent">
-              RETAIL
-            </Link>
+            <Link to="">RETAIL</Link>
           </div>
         </div>
         <div className="header center">

@@ -1,9 +1,36 @@
 .shopping-cart-modal {
   border-radius: 0;
+  font-family: 'Playfair Display';
 }
-.CartLinkButton {
-  position: relative !important;
+.CartButton {
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 3rem !important;
+  width: 3rem !important;
 }
+
+.shopping-cart-body {
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.46961063114443347) 0%,
+    rgba(214, 214, 214, 0.5116274378671226) 70%
+  );
+}
+.backToShopButton {
+  width: 300px !important;
+  height: 30px !important;
+}
+.emptyMessageContainer {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
 .cartSvg {
   width: 2.2rem;
   height: 2.2rem;
@@ -11,40 +38,93 @@
 .shopping-cart-header {
   border: none;
   color: white;
-  background-color: rgb(243, 134, 115);
+  background-color: rgb(241, 150, 134);
 }
 
-/* .shopping-cart-title {
-}
+.productContainer {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
 
-.shopping-cart-body {
-} */
+  align-items: center;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.image img {
+  height: 200px !important;
+  width: 200px !important;
+}
+.productInfo {
+  width: 50%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.productName {
+  font-size: 1.3rem;
+}
+.itemPrice {
+  font-size: 1.3rem;
+}
+.productAddnDelete {
+  display: flex;
+  flex-direction: row;
+}
+.productAddnDelete button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .shopping-cart-footer {
   display: flex !important;
   justify-content: space-around !important;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.46961063114443347) 0%,
+    rgba(214, 214, 214, 0.5116274378671226) 70%
+  );
 }
 
 .shopping-cart-button-clear {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  font-weight: bold;
-  width: 100px;
+  font-weight: bold !important;
+  width: 120px;
   height: 30px;
   border: none !important;
-  background-color: rgb(243, 134, 115) !important;
+  background-color: rgb(224, 106, 85) !important;
 }
 .shopping-cart-button-checkout {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  font-weight: bold;
+  font-weight: bold !important;
   width: 100px;
   height: 30px;
   border: none !important;
-  background-color: rgb(243, 134, 115) !important;
+  background-color: rgb(224, 106, 85) !important;
+}
+.totalPrice {
+  text-align: end;
 }
 .EmptyCartInfo {
   text-align: center;
+}
+.emptyMessageContainer {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+a {
+  text-decoration: none !important;
 }

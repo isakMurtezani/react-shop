@@ -1,9 +1,14 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../Context/CartContext';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './ShoppingCart.css';
 
 function ShoppingCart() {
+  const { cartItems, addToCart, removeFromCart, clearCart, getCartTotal } =
+    useContext(CartContext);
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -11,7 +16,7 @@ function ShoppingCart() {
 
   return (
     <>
-      <Button className="CartLinkButton" variant="light" onClick={handleShow}>
+      <Button variant="transparent" className="CartButton" onClick={handleShow}>
         <svg
           className="cartSvg"
           xmlns="http://www.w3.org/2000/svg"
@@ -31,16 +36,56 @@ function ShoppingCart() {
         className="shopping-cart-modal">
         <Modal.Header closeButton className="shopping-cart-header">
           <Modal.Title className="shopping-cart-title">
-            Shopping Cart
+            <h1>Cart</h1>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="shopping-cart-body">
-          <p className="EmptyCartInfo">Your cart is empty!</p>
+          <div>
+            <div>
+              {cartItems.map((item) => (
+                <div className="productContainer" key={item.id}>
+                  <div className="image">
+                    <img src={item.image} alt={item.name} />
+                  </div>
+
+                  <div className="productInfo">
+                    <span className="productName">{item.name}</span>
+                    <span className="itemPrice">${item.price}.00</span>
+                    <div className="productAddnDelete">
+                      <button
+                        className="removeItemButton"
+                        onClick={() => removeFromCart(item)}>
+                        -
+                      </button>
+                      <span>{item.quantity}</span>
+                      <button
+                        className="addItemButton"
+                        onClick={() => addToCart(item)}>
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            {cartItems.length > 0 ? (
+              <div className="totalPrice">
+                <h1>Total: ${getCartTotal()}.00</h1>
+              </div>
+            ) : (
+              <div className="emptyMessageContainer">
+                <h1 className="emptyCartMessage">Your cart is empty!</h1>
+                <button onClick={handleClose} className="shop-button">
+                  <Link to="/shop">Back to Shop</Link>
+                </button>
+              </div>
+            )}
+          </div>
         </Modal.Body>
         <Modal.Footer className="shopping-cart-footer">
           <Button
             variant="secondary"
-            onClick={handleClose}
+            onClick={() => clearCart()}
             className="shopping-cart-button-clear">
             Clear Cart
           </Button>

@@ -3,4 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+}
+.single-product :hover {
+  transform: scale(0.9);
+  transition: 100ms ease-in-out;
+  opacity: 0.7;
+}
+.addToCartButton {
+  width: 120px !important;
 }

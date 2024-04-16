@@ -3,9 +3,11 @@
   color: black;
   padding: 20px;
   text-align: center;
-  vertical-align: middle;
   font-family: sans-serif;
   width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
 
 .footer-wrapper div figure img {
