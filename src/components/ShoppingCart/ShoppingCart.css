@@ -16,8 +16,22 @@
   text-align: center;
 }
 
-.shop-button {
-  width: 30% !important;
+.cart-shop-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13em;
+  height: 3em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: rgb(243, 134, 115);
+
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+.cart-shop-button a {
+  color: white !important;
 }
 
 .emptyMessageContainer {

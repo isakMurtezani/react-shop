@@ -42,10 +42,6 @@ header {
   overflow: hidden;
   margin-top: 0;
 }
-/* .content {
-  animation: fadeIn;
-  animation-duration: 5s;
-} */
 
 #background-video {
   position: absolute;

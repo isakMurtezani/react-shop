@@ -75,7 +75,7 @@ function ShoppingCart() {
             ) : (
               <div className="emptyMessageContainer">
                 <h1 className="emptyCartMessage">Your cart is empty!</h1>
-                <button onClick={handleClose} className="shop-button">
+                <button onClick={handleClose} className="cart-shop-button">
                   <Link to="/shop">Back to Shop</Link>
                 </button>
               </div>
