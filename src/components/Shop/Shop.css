@@ -1,26 +1,50 @@
 .shop-frontpage {
-  height: 220vh;
+  margin-top: 130px;
+  height: 100vh;
   width: 100%;
   display: flex;
+  overflow-y: auto;
 }
 
-.shop-content div figure {
+.shop-content {
+  width: calc(100% - 15vw);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.category-filter {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: left;
+  padding: 20px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  height: auto;
+  overflow-y: auto;
 }
 
-.shop-filter {
-  padding: 30px;
-  height: 100%;
-  width: 15vw;
-  background-color: rgb(255, 255, 255);
-  border: 1px;
-  border-color: rgb(148, 148, 145);
-  border-style: solid;
+.category-filter label {
+  display: none;
 }
 
-img {
-  width: 18.75rem;
-  height: 18.75rem;
+.category-filter select {
+  margin: 15px 0;
+  border-color: rgb(0, 0, 0);
+  border-radius: 0%;
+}
+
+@media (min-width: 768px) {
+  .category-filter {
+    width: 15vw;
+    height: 100vh;
+  }
+
+  .category-filter label {
+    display: block;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Playfair Display';
+  }
 }

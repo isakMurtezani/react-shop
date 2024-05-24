@@ -62,6 +62,11 @@ function Footer() {
             </svg>
           </Link>
         </div>
+        <div className="copyright">
+          <span>
+            <i className="patience">Made with Patience™</i>
+          </span>
+        </div>
       </div>
     </div>
   );

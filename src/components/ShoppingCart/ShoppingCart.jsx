@@ -31,7 +31,7 @@ function ShoppingCart() {
       <Modal
         show={show}
         centered
-        size="lg"
+        size="md"
         onHide={handleClose}
         className="shopping-cart-modal">
         <Modal.Header closeButton className="shopping-cart-header">
@@ -45,12 +45,12 @@ function ShoppingCart() {
               {cartItems.map((item) => (
                 <div className="productContainer" key={item.id}>
                   <div className="image">
-                    <img src={item.image} alt={item.name} />
+                    <img src={item.thumbnail} alt={item.title} />
                   </div>
 
                   <div className="productInfo">
-                    <span className="productName">{item.name}</span>
-                    <span className="itemPrice">${item.price}.00</span>
+                    <span className="productName">{item.title}</span>
+                    <span className="itemPrice">${item.price}</span>
                     <div className="productAddnDelete">
                       <button
                         className="removeItemButton"
@@ -70,7 +70,7 @@ function ShoppingCart() {
             </div>
             {cartItems.length > 0 ? (
               <div className="totalPrice">
-                <h1>Total: ${getCartTotal()}.00</h1>
+                <h1>Total: ${getCartTotal()}</h1>
               </div>
             ) : (
               <div className="emptyMessageContainer">

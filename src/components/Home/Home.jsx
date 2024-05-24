@@ -1,21 +1,27 @@
-// import { useEffect, useState } from 'react';
 import './Home.css';
-
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import { Shop } from '../Shop/Shop.jsx';
+import 'animate.css';
 
 export const Home = () => {
-  // const [productList, setProductList] = useState([]);
+  const [email, setEmail] = useState('');
+  const [emailError, setEmailError] = useState('');
 
-  // useEffect(() => {
-  //   console.log('MEOW');
-  //   fetch('src/assets/resources/json/products.json')
-  //     .then((res) => res.json())
-  //     .then((json) => {
-  //       console.log('setting Products =======> ', json.products);
-  //       setProductList(json.products);
-  //     });
-  // }, []);
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      setEmailError('Please enter a valid email address');
+    } else {
+      setEmailError('');
+      console.log('Email is valid:', email);
+    }
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value.trim());
+  };
 
   return (
     <div className="home">
@@ -82,9 +88,28 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="newsletter">
-        <div className="newsletter-title">SELF CARE</div>
-      </div>
+      {/* <div className="newsletter">
+        <div className="newsletter-left"></div>
+        <div className="newsletter-right">
+          <div className="newsletter-title">SELF CARE</div>
+          <p>
+            Subscribe to our newsletter and recieve skincare tips, discount
+            offers and much more!
+          </p>
+          <div className="form-container">
+            <form onSubmit={handleFormSubmit}>
+              <input
+                type="email"
+                value={email}
+                onChange={handleEmailChange}
+                placeholder="Enter your email"
+              />
+              <p className="error-message">{emailError}</p>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };

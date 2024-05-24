@@ -3,18 +3,20 @@ import toast, { Toaster } from 'react-hot-toast';
 import './SingleProduct.css';
 import { useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
+import { Link, useNavigate } from 'react-router-dom';
 
 function SingleProduct({ product }) {
   const { addToCart } = useContext(CartContext);
+  const navigate = useNavigate();
+
   const cartNotification = () => {
     toast('Item added to Cart!');
   };
 
-  // If this componet has props.product then use props
-  // If not populate product with API Request to the single product
-
   return (
-    <div className="single-product">
+    <div
+      className="single-product"
+      onClick={() => navigate(`/product/${product.id}`)}>
       <Toaster
         gutter={10}
         toastOptions={{
@@ -29,12 +31,15 @@ function SingleProduct({ product }) {
         reverseOrder={true}
       />
       <figure>
-        <img src={product.image} />
-        <figcaption>{product.name}</figcaption>
+        <Link to={`/product/${product.id}`}>
+          <img src={product.thumbnail} alt={product.title} />
+        </Link>
+        <figcaption>{product.title}</figcaption>
       </figure>
-      <span>${product.price}.00</span>
+      <span>${product.price}</span>
       <button
-        onClick={() => {
+        onClick={(e) => {
+          e.stopPropagation();
           addToCart(product);
           cartNotification();
         }}

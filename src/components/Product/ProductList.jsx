@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import React from 'react';
 import { SingleProduct } from './SingleProduct.jsx';
 import './ProductList.css';
 
@@ -6,10 +6,9 @@ function ProductList({ products }) {
   return (
     <>
       <div className="product-list-wrapper">
-        {products?.map((product) => {
-          // console.log("Each Product in the list =>", product)
-          return <SingleProduct key={product.id} product={product} />;
-        })}
+        {products.map((product) => (
+          <SingleProduct key={product.id} product={product} />
+        ))}
       </div>
     </>
   );

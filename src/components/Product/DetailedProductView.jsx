@@ -1,33 +1,42 @@
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import './DetailedProductView.css';
 
 function DetailedProductView() {
-  const urlParams = useParams();
-  const [product, setProduct] = useState({});
-  const URLProductID = urlParams.id;
-  console.log('URL params DetailedProductView =>', urlParams);
-  console.log('ID from param', URLProductID);
+  const { productId } = useParams();
+  const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    // MAKE A REQUESTO TOWARDS WEBSHOP API
-    fetch('src/assets/resources/json/products.json' + URLProductID)
-      .then((res) => res.json())
-      .then((json) => {
-        console.log('Product => ', json);
+    const fetchProduct = async () => {
+      try {
+        const response = await fetch(
+          `https://dummyjson.com/products/${productId}`
+        );
+        const json = await response.json();
+        console.log('Fetched product:', json);
         setProduct(json);
-      });
-  }, []);
+      } catch (error) {
+        console.error('Error fetching product:', error);
+      }
+    };
+
+    if (productId) {
+      fetchProduct();
+    } else {
+      console.error('Product ID is undefined');
+    }
+  }, [productId]);
+
+  if (!product) {
+    return <div>Loading...</div>;
+  }
 
   return (
-    <div>
-      <img
-        src={product.image}
-        alt={product.title + ' image'}
-        height={500}
-        style={{ padding: 20 }}
-      />
-      <h2>{product.title}</h2>
+    <div className="detailed-product-view">
+      <img src={product.thumbnail} alt={product.title} />
+      <h1>{product.title}</h1>
       <p>{product.description}</p>
+      <span>${product.price}</span>
     </div>
   );
 }
